@@ -9,9 +9,11 @@ from keras.layers import Dense, Dropout, Activation, Flatten
 from keras.layers import Convolution2D, MaxPooling2D
 from keras.optimizers import Adadelta
 from keras.utils import np_utils
-from keras.regularizers import l2, activity_l2
+#from keras.regularizers import l2, activity_l2
+from keras.regularizers import l2, l1
+from keras.layers import deserialize as layer_from_config
 import numpy as np
-import cPickle 
+import _pickle as cPickle
 import numpy
 import cv2
 import scipy
